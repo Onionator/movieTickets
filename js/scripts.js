@@ -53,6 +53,7 @@ $(document).ready(function() {
     ticket.movieTime(time);
     console.log(ticket);
     $(".output").text("Your " + ticket.time + " ticket for " + ticket.movieName + " is $" + ticket.cost + ".");
+    $("body").addClass("scary");
   });
   $(".showForm").click(function() {
     $("#form").show();

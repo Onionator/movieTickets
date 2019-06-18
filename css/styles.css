@@ -1,5 +1,6 @@
 body {
   background-color: black;
+
 }
 ul {
   list-style: none;
@@ -44,6 +45,41 @@ figure {
 button {
   background-color: blue;
 }
+.scary {
+
+  animation: fun .05s infinite, clown .5s infinite;
+}
+
+@keyframes fun {
+  0% {background-color: black}
+  10% {background-color: white}
+  20% {background-color: black}
+  30% {background-color: white}
+  40% {background-color: black}
+  50% {background-image: url(../img/clowns.jpg)}
+  60% {background-color: black}
+  70% {background-color: white}
+  80% {background-color: black}
+  90% {background-color: white}
+  100% {background-color: black}
+
+}
+@keyframes clown {
+  0% {opacity: .1 }
+  10% {opacity: .2}
+  20% {opacity: .3}
+  30% {opacity: .4}
+  40% {opacity: .5}
+  50% {opacity: .6}
+  60% {opacity: .7}
+  70% {opacity: .8}
+  80% {opacity: .9}
+  90% {opacity: 1}
+  100% {opacity: 0}
+
+
+}
+
 
 #form {
   color: white;
