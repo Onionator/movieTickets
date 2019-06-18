@@ -26,9 +26,21 @@ Ticket.prototype.movieTime = function(time) {
   }
 }
 
-
+function attachContactListeners() {
+  $("ul#shows").on("click", "li", function() {
+    console.log(this.value);
+      if (this.value === 0) {
+        $(this).next().html("Beware! this movie is about clowns.<br>Rated: G - for Gore");
+      } else if (this.value === 1) {
+        $(this).next().html("Harry is a bald sasquatch in search of true love... or a full body wig. Either will work. Just watch it.");
+      } else {
+        $(this).next().html("BAAAA! said no sheep ever in this movie. The sheep are quiet... too quiet.");
+      }
+  });
+}
 
 $(document).ready(function() {
+  attachContactListeners();
   //output the name of the movie, the time, and the cost. it should also clear the input fields
   $("button").click(function() {
     console.log("button works");
@@ -40,5 +52,9 @@ $(document).ready(function() {
     ticket.userAge(age);
     ticket.movieTime(time);
     console.log(ticket);
+    $(".output").text("Your " + ticket.time + " ticket for " + ticket.movieName + " is $" + ticket.cost + ".");
+  });
+  $(".showForm").click(function() {
+    $("#form").show();
   })
 })

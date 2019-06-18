@@ -9,36 +9,76 @@
 </head>
 <body class="container">
   <div>
-    <h1>Movies</h1>
-    <form class="" action="index.html" method="post">
-      <input type="radio" name="movie" value="clowns">
-      <label>Revenge of the Clowns</label><br>
-      <input type="radio" name="movie" value="harry">
-      <label>Harry and the Robertsons</label><br>
-      <input type="radio" name="movie" value="sheep">
-      <label>The Silence of the Sheep</label><br>
-    </form>
-  </div>
-  <div>
-    <h1>Age</h1>
-    <form class="" action="index.html" method="post">
-      <input type="radio" name="age" value="kid">
-      <label>Under 12</label><br>
-      <input type="radio" name="age" value="adult">
-      <label>Adult</label><br>
-      <input type="radio" name="age" value="senior">
-      <label>65 and Over</label><br>
-    </form>
-  </div>
-  <div class="">
-    <h1>Time</h1>
-    <form class="" action="index.html" method="post">
-      <input type="radio" name="time" value="matinee">
-      <label>Matinee</label><br>
-      <input type="radio" name="time" value="regular">
-      <label>Regular</label><br>
-    </form>
-  </div>
-  <button type="click" name="button">Get Cost</button>
-</body>
-</html>
+    <div class="get-ticket" id="form">
+      <div class="row">
+        <form class="col-md-4" action="index.html" method="post">
+          <h1>Movies</h1>
+          <input type="radio" name="movie" value="clowns">
+          <label>Revenge of the Clowns</label><br>
+          <input type="radio" name="movie" value="harry">
+          <label>Harry and the Robertsons</label><br>
+          <input type="radio" name="movie" value="sheep">
+          <label>The Silence of the Sheep</label><br>
+        </form>
+
+
+        <form class="col-md-4" action="index.html" method="post">
+          <h1>Age</h1>
+          <input type="radio" name="age" value="kid">
+          <label>Under 12</label><br>
+          <input type="radio" name="age" value="adult">
+          <label>Adult</label><br>
+          <input type="radio" name="age" value="senior">
+          <label>65 and Over</label><br>
+        </form>
+
+        <form class="col-md-4" action="index.html" method="post">
+          <h1>Time</h1>
+          <input type="radio" name="time" value="matinee">
+          <label>Matinee</label><br>
+          <input type="radio" name="time" value="regular">
+          <label>Regular</label><br>
+        </form>
+      </div>
+      <button type="click" name="button">Get Ticket</button>
+    </div>
+
+    <div class="row">
+      <ul  id="shows">
+        <div class="col-md-4">
+          <div class="titleBox">
+          <li value="0">Revenge of the Clowns</li>
+          <p></p>
+          <figure>
+            <img value="0" src="img/clowns.jpg" alt="">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="titleBox">
+          <li value="1">Harry and the Robertsons</li>
+          <p></p>
+          <figure>
+            <img value="1" src="img/harry.jpg" alt="">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="titleBox">
+          <li value="2">The Silence of the Sheep</li>
+          <p></p>
+          <figure>
+          <img value="2" src="img/sheep.jpg" alt="">
+          <figcaption></figcaption>
+        </figure>
+        </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="output">
+    </div>
+  </body>
+  </html>
