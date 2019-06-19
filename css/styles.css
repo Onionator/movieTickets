@@ -46,8 +46,25 @@ button {
   background-color: blue;
 }
 .scary {
+  background-size: cover;
+  animation: singleClown 4s infinite;
+  /* animation: fun .07s infinite, clown .5s infinite, evil .1s infinite; */
+}
 
-  animation: fun .07s infinite, clown .5s infinite, evil .1s infinite;
+@keyframes singleClown {
+  0% {background-color: black}
+  49% {background-image: none}
+  50% {background-image: url(../img/clowns.jpg)}
+  51% {background-image: none}
+  52% {background-image: url(../img/clowns.jpg)}
+  53% {background-image: none}
+  54% {background-image: url(../img/clowns.jpg)}
+  55% {background-image: none}
+  56%{ background-image: url(../img/clowns.jpg)}
+  57% {background-image: none}
+  58% {background-image: url(../img/clowns.jpg)}
+  63% {background-image: none}
+  100% {background-color: black}
 }
 
 @keyframes fun {
