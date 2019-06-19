@@ -47,7 +47,7 @@ button {
 }
 .scary {
   background-size: cover;
-  animation: singleClown 4s infinite;
+  animation: singleClown 5s infinite, clown 60s infinite;
   /* animation: fun .07s infinite, clown .5s infinite, evil .1s infinite; */
 }
 
@@ -96,7 +96,7 @@ button {
 
 
 
-@keyframes clown {
+/* @keyframes clown {
   0% {opacity: .1 }
   10% {opacity: .2}
   20% {opacity: .3}
@@ -110,8 +110,12 @@ button {
   100% {opacity: 0}
 
 
-}
+} */
 
+@keyframes clown {
+  0% {opacity: 0}
+  100% {opacity: 0}
+}
 
 #form {
   color: white;
