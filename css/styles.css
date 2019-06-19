@@ -47,23 +47,38 @@ button {
 }
 .scary {
 
-  animation: fun .05s infinite, clown .5s infinite;
+  animation: fun .07s infinite, clown .5s infinite, evil .1s infinite;
 }
 
 @keyframes fun {
+  0% {background-color: black}
+  50% {background-color: white}
+  0% {background-color: black}
+}
+
+/* @keyframes fun {
   0% {background-color: black}
   10% {background-color: white}
   20% {background-color: black}
   30% {background-color: white}
   40% {background-color: black}
-  50% {background-image: url(../img/clowns.jpg)}
+  50% {background-color: white}
   60% {background-color: black}
   70% {background-color: white}
   80% {background-color: black}
   90% {background-color: white}
   100% {background-color: black}
+} */
+@keyframes evil {
+  0% {background-image: none}
+  40% {background-image: none}
+  50% {background-image: url(../img/clowns.jpg)}
+  100% {background-image: none}
 
 }
+
+
+
 @keyframes clown {
   0% {opacity: .1 }
   10% {opacity: .2}
